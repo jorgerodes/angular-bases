@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class CounterComponent {
-  constructor() { }
+
 
   public counter: number = 10;
   increaseBy(value: number = 1) : void

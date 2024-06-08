@@ -4,17 +4,13 @@
 <div class="row">
 
   <div class="col">
-    <dbz-list [characterList]="characters"></dbz-list>
+    <dbz-list [listaPersonajes]="characters"></dbz-list>
 
   </div>
 
   <div class="col">
-<h4>Agregar personaje</h4>
-    {{ characters }}
-    <dbz-add-character></dbz-add-character>
 
+    <dbz-add-character (onNewCharacter)="onNuevoPersonaje($event)"></dbz-add-character>
 
   </div>
-
-
 </div>

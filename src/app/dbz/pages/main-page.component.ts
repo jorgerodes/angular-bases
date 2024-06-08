@@ -18,4 +18,10 @@ export class MainPageComponent {
     power: 9500
   }
 ];
+
+onNuevoPersonaje(character: Character): void {
+
+  this.characters.push(character);
+
+}
 }

@@ -7,7 +7,14 @@ import { Character } from '../../interfaces/characters.interface';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
+
   @Input()
-  public characterList: Character[] = [];
+  public listaPersonajes: Character[] =
+    [
+      {
+        name: 'Trunks',
+        power :10
+      }
+    ];
 
 }

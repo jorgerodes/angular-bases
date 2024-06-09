@@ -16,12 +16,18 @@ export class MainPageComponent {
   {
     name: 'Goku',
     power: 9500
+  },
+  {
+    name: 'Vegeta',
+    power: 8000
   }
 ];
 
 onNuevoPersonaje(character: Character): void {
-
   this.characters.push(character);
+}
 
+onBorraPersonaje(index: number): void {
+  this.characters.splice(index,1);
 }
 }
